@@ -10,7 +10,12 @@ public class Main {
         System.out.println("\nThe third power of 3 is : " + ANSI_GREEN + thirdPowerOfNumber(number) + ANSI_RESET + "\n");
         System.out.println("How many stars should be printed? : ");
         Scanner console = new Scanner(System.in);
-        printChar(console.nextInt());
+        if (console.hasNextInt()) {
+            printChar(console.nextInt());
+        } else {
+            System.out.println("Вы ввели не целое число. Нужно перезапустить ПО и повторить ввод целого числа.");
+            System.exit(0);
+        }
         System.out.println("\nWhat symbol do you want to print (Оnly one char. The rest will be ignored.) ?");
         String symbol = console.next();
         System.out.println("How many times?");

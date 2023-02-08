@@ -26,7 +26,7 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println("\nThe even numbers between 1 and 100:");
-        for (int i = 2; i < 101; i+=2) {
+        for (int i = 2; i < 101; i += 2) {
             System.out.print(i + " ");
         }
     }
