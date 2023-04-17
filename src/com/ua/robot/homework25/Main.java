@@ -13,6 +13,7 @@ public class Main {
             try {
                 number = scanner.nextInt();
                 marker = true;
+                scanner.close();
             } catch (InputMismatchException e) {
                 System.out.println("Wrong input! Stay calm and carry on!");
             }
